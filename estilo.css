@@ -1,0 +1,32 @@
+/*.importante{
+    font-weight: 900;
+}
+*/
+/*lo podemos solucionar con selector adyacente*/
+p+p{
+    font-weight: 900;
+}
+ul{
+    list-style-type: none;
+}
+
+a{
+ 
+     background-repeat: no-repeat;
+     padding-left: 20px;
+ }
+/*^los que empiezen po http */
+a[href^="http"]{
+        background-image: url(iconos/external-link.png);
+}
+/* ^los que empiezen po # */
+a[href^="#"]{
+        background-image: url(iconos/internal-link.png);
+}
+/* $ los que termine por .zip*/
+a[href$=".zip"]{
+        background-image: url(iconos/zip-link.png);
+}
+a[href$=".pdf"]{
+        background-image: url(iconos/pdf-link.png);
+}
